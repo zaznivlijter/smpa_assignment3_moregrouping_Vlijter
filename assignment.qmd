@@ -49,8 +49,6 @@ Write your code using grouping in the chunks below to help answer the following 
 
 
 
-
-
 ```
 
 2)  Similar to #1 above, using grouping to now break down the Democratic House members by TWO measures: those who are for or against impeachment (as you did above)....and then districts above/below national GDP.  
