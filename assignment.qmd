@@ -104,7 +104,11 @@ The relevant column for that is `trump_percent`.
 ```{r}
 
 
+impeach%>%
+group_by(for_impeachment=="NO")%>% summarise(trump_percent = mean(trump_percent))
 
+impeach%>%
+group_by(for_impeachment=="YES")%>% summarise(pct_bachelors = mean(pct_bachelors))
 
 
 
