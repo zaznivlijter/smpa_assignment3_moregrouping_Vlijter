@@ -68,7 +68,7 @@ group_by(for_impeachment="NO", gdp_above_national)
 
 
 impeach %>%
-group_by(for_impeachment="NO", pct_bachelors_compared_to_national)
+group_by(for_impeachment="NO", pct_bachelors_compared_to_national= "ABOVE")
 
 
 
@@ -85,7 +85,8 @@ Instead of counting how many districts are above/below the national average, thi
 In other words, you want to end up with the calculated mean for what that percentage is for the Yes districts and the No districts.
 
 ```{r}
-
+impeach%>%
+group_by(for_impeachment=="NO")%>% summarise(pct_bachelors = mean(pct_bachelors))
 
 
 
