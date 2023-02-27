@@ -122,11 +122,11 @@ group_by(for_impeachment=="YES")%>% summarise(pct_bachelors = mean(pct_bachelors
 
 ```{r}
 
-  
+impeach%>%
+filter(for_impeachment =="YES")%>% filter(margin_flag_2018== "5_points_or_less")
 
-
-
-
+impeach%>%
+filter(for_impeachment =="YES")%>% filter(margin_flag_2018== "more_than_5_points")
 
 
 
@@ -135,7 +135,7 @@ group_by(for_impeachment=="YES")%>% summarise(pct_bachelors = mean(pct_bachelors
 7)  Come up with another breakdown of your choosing for how you'd like to examine this dataset. Say what you'll look at, and then put the code below to find the answer.
 
 ```{r}
-
+I will look at the which members voted Yes for impeachment 
   
 
 
