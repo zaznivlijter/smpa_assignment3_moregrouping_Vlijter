@@ -43,12 +43,8 @@ Write your code using grouping in the chunks below to help answer the following 
 1)  How many members in the dataset favor impeachment vs. not (using the `for_impeachment` column)?
 
 ```{r} 
-
-impeach %>%filter(for_impeachment == "NO")
-
-26 said no 
-
-```
+impeach %>%filter(for_impeachment == "YES")%>% filter(for_impeachment== "NO")
+```26 said no and 209 said yes
 
 2)  Similar to #1 above, using grouping to now break down the Democratic House members by TWO measures: those who are for or against impeachment (as you did above)....and then districts above/below national GDP.  
   
