@@ -52,16 +52,14 @@ You'll want to ensure you do the grouping on both columns together, e.g. `group_
 
 ```{r}
 impeach%>%
-group by(for_impeachment, gpd_above_national)
+group_by(for_impeachment== "NO") %>% groupgpd_above_national)
 
+impeach %>%filter(for_impeachment == "YES")%>% filter(for_impeachment== "NO")
+```
 
-
-
-
-
-
-
-
+```{r} 
+impeach %>%
+group_by(for_impeachment="NO", gdp_above_national)
 ```
 
 3)  Now do the same as #2, but this time instead of GDP, group by whether the district is above or below the national average for the percentage of college graduates. The column that captures this information is `pct_bachelors_compared_to_national`.
@@ -69,7 +67,8 @@ group by(for_impeachment, gpd_above_national)
 ```{r}
 
 
-
+impeach %>%
+group_by(for_impeachment="NO", pct_bachelors_compared_to_national)
 
 
 
