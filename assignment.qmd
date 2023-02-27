@@ -51,7 +51,8 @@ impeach %>%filter(for_impeachment == "YES")%>% filter(for_impeachment== "NO")
 You'll want to ensure you do the grouping on both columns together, e.g. `group_by(column1, column2)`
 
 ```{r}
-
+impeach%>%
+group by(for_impeachment, gpd_above_national)
 
 
 
