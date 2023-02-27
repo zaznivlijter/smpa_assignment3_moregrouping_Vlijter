@@ -89,7 +89,8 @@ impeach%>%
 group_by(for_impeachment=="NO")%>% summarise(pct_bachelors = mean(pct_bachelors))
 
 
-
+impeach%>%
+group_by(for_impeachment == "YES") %>% summarise(pct_bachelors = mean(pct_bachelors))
 
 
 
