@@ -42,12 +42,11 @@ Write your code using grouping in the chunks below to help answer the following 
 
 1)  How many members in the dataset favor impeachment vs. not (using the `for_impeachment` column)?
 
-```{r}
+```{r} 
 
+impeach %>%filter(for_impeachment == "NO")
 
-
-
-
+26 said no 
 
 ```
 
